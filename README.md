@@ -59,16 +59,15 @@ The API handles various edge cases to ensure a smooth user experience:
 ```
 name-classifier-api/
 ├── src/
-│   ├── config/         # Environment & CORS configurations
-│   ├── controllers/    # Handles request logic & sends responses
-│   ├── middleware/     # Custom request validation & error filters
-│   ├── routes/         # API endpoint definitions
-│   ├── services/       # External API communication (Genderize)
-│   ├── utils/          # Helper functions & data processing logic
-│   └── app.js          # Express app configuration
-├── server.js           # Server entry point
-├── package.json        # Project metadata & dependencies
-└── .gitignore          # Files to exclude from version control
+│   ├── controllers/classifyController.js
+│   ├── middleware/validateQuery.js
+│   ├── routes/classifyRoutes.js
+│   ├── services/genderizeService.js
+│   ├── utils/processData.js
+│   └── app.js
+├── server.js
+├── package.json
+└── .gitignore
 ```
 
 ## How To Run
